@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Theme Region">
 <meta name="description" content="">
-<title>House rents</title>
+<title>TIN Applications</title>
 <!-- Bootstrap CSS -->
 
 <script src="https://unpkg.com/feather-icons"></script>
@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<!--!--	!--	MENU CONTROLS--> 
+<!--	!--	MENU CONTROLS--> 
 
 <!-- header --> 
 <!--		navigation bar -->
@@ -632,7 +632,6 @@
   </div>
 </div>
 <div id="mobilemenu-overlay"></div>
-<!--	search receipt pop up-->
 <section class="account-pop-up h-100vh w-100 justify-content-center align-items-center animated d-none" id="search-receipt">
   <div class="container p-lg-5 p-md-0">
     <div class="row p-5">
@@ -744,9 +743,9 @@
   <div class="container">
     <div class="row p-5 ">
       <div class="service-form-container  d-flex flex-column-md animated col-12 p-0">
-        <div class="col-lg-7 service-form-img-container" id="house-rent-img">
+        <div class="col-lg-7 service-form-img-container" id="land-img">
           <div class="col-lg-8 col-md-12 position-relative p-5">
-            <h2 class="mb-4 text-capitalize text-white">NCCC house rents</h2>
+            <h2 class="mb-4 text-capitalize text-white">NCCC land rates</h2>
             <p class="font-14 mb-3 text-capitalize">fill in and remember to double check details to avoid any errors.</p>
           </div>
         </div>
@@ -756,46 +755,10 @@
             <p class="mb-5 pb-2 text-capitalize"><strong>correctly fill in the form bellow to continue</strong></p>
           </div>
           <form class="transaction-form">
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="estate" class="text-capitalize">select the estate</label>
-              <select class="form-control" id="estate">
-                <option>-- select the estate --</option>
-                <option>estate name</option>
-                <option>estate name</option>
-                <option>estate name</option>
-                <option>estate name</option>
-                <option>estate name</option>
-               
-              </select>
-            </div>
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="house_type" class="text-capitalize">select house type</label>
-              <select class="form-control" id="house_type">
-                <option >-- select the house type --</option>
-                <option >type name</option>
-                <option >type name</option>
-                <option>type name</option>
-                <option>type name</option>
-                <option>type name</option>
-                <option>type name</option>
-                <option>type name</option>
-              </select>
-            </div>
-			  
-			  <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="house_number" class="text-capitalize">select house type</label>
-              <select class="form-control" id="house_number">
-                <option >-- select house number --</option>
-                <option >house number</option>
-                <option >house number</option>
-                <option >house number</option>
-                <option >house number</option>
-                <option >house number</option>
-                <option >house number</option>
-                
-              </select>
-            </div>
-			  
+            <div class="form-group col-sm-12 col-md-12 p-0 mt-2 mb-5">
+                <label for="mpesa-phone" class="text-capitalize">enter plot number</label>
+                <input type="text" class="form-control" id="plot" placeholder="egplot number">
+              </div>
 			  
             <div class="col-12 p-4 center danger-light-bg lighter-txt price-container position-relative">
 				 <span class="close-price-container position-absolute"> <i data-feather="x"></i></span>
@@ -836,7 +799,7 @@
               </div>
             </div>
             
-            <div class="col-12 p-0 text-uppercase mt-5">
+            <div class="col-12 px-0 text-uppercase mt-5 pt-5">
               <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 transaction-form-btn"><span class="btn-text text-uppercase font-12">check status</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
             </div>
           </form>

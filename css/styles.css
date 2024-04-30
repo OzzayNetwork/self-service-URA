@@ -1090,3 +1090,7 @@ table.transcation-table tr:nth-child(even) {
     display: none;
   }
 }
+
+.text-center{
+  text-align: center !important;
+}
