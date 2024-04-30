@@ -10,7 +10,7 @@ nav {
   display: flex;
   margin: 0px;
   width: 100%;
-  background-color: #005c96;
+  background-color: #1755a6;
   color: white;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .active-revenu {
-  background: #005c960d;
+  background: #1755a60d;
 }
 
 .active-revenue svg, .toogle-menu-container ul li:hover svg {

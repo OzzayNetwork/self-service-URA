@@ -1,7 +1,7 @@
 /*GENERAL STYLING*/
 
 :root {
-  --primary: #005c96;
+  --primary: #1755a6;
   --secondary: #FFDC01;
   ;
 }
@@ -59,11 +59,11 @@ a:hover {
   border: 0;
   border-radius: 0;
   color: white;
-  border: 1px solid #005c96;
+  border: 1px solid #1755a6;
 }
 
 .btn:hover {
-  color: #005c96;
+  color: #1755a6;
   background: white;
 }
 
@@ -554,8 +554,8 @@ footer p {
 }
 
 .sub-link-container {
-  border-color: #005c96;
-  background-color: #005c96;
+  border-color: #1755a6;
+  background-color: #1755a6;
   width: 337px;
   height: 482px;
   padding: 0px !important;
@@ -591,7 +591,7 @@ footer p {
   top: 0;
   left: 0;
   height: 100%;
-  background: #005c96;
+  background: #1755a6;
   flex-flow: column;
   transition: all 1s;
 }
@@ -872,13 +872,13 @@ table.transcation-table tr:nth-child(even) {
   justify-content: center;
   color: white;
   border: none;
-  background: #005c96;
+  background: #1755a6;
   padding: 7px;
 }
 
 .credit-payment-inputs>button:hover {
-  border: 1px solid #005c96;
-  color: #005c96;
+  border: 1px solid #1755a6;
+  color: #1755a6;
   background: white;
 }
 

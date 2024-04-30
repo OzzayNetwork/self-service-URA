@@ -41464,11 +41464,11 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
     background: #fff;
 }
 .btn.btn-primary {
-    background-color: #005c96;
-    border-color: #005c96;
+    background-color: #1755a6;
+    border-color: #1755a6;
 }
 .btn.btn-secondary {
-    background-color: rgb(252, 192, 14);
+    background-color: rgb(255 242 0);
    
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
@@ -41514,17 +41514,17 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
 }
 .btn.btn-transparent {
     background: transparent;
-	border: 1px solid #005c96;
-	color: #005c96;
+	border: 1px solid #1755a6;
+	color: #1755a6;
 }
 
 .btn.btn-transparent:hover {
     background: transparent;
-	border: 2px solid #005c96;
-	color: #005c96;
+	border: 2px solid #1755a6;
+	color: #1755a6;
 }
 .text-primary{
-	color: #005c96 !important;
+	color: #1755a6 !important;
 }
 .btn.btn-transparent:hover, .btn.btn-transparent:active, .btn.btn-transparent:focus {
     background-color: #008dcb;
@@ -42296,19 +42296,19 @@ body .top_slider_wrapp .flexslider .slides li td.text * {
 }
 
 .bg-pri{
-	background-color: #005c96;
+	background-color: #1755a6;
 }
 
 .bg-pri-hover{
-	background-color: #005c96;
+	background-color: #1755a6;
 }
 
 .bg-pri-hover:hover{
-	background-color: #007cb7;
+	background-color: #1755a6;
 }
 
 .header-v4 .menu-row .maxwidth-theme{
-    background-color: #005c96 !important;
+    background-color: #1755a6 !important;
   }
   
 

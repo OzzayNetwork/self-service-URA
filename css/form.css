@@ -81,7 +81,7 @@
 }
 
 .form-container input[type="submit"] {
-    background-color: #005c96;
+    background-color: #1755a6;
     display: flex;
     color: white;
     text-transform: uppercase;
@@ -162,7 +162,7 @@
 
 .form-container h3 {
     font-size: 30px;
-    color: #005c96;
+    color: #1755a6;
     font-weight: bold;
     text-align: left;
 }
