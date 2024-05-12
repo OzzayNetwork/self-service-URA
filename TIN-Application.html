@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="css/animate/animate.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <!--	bootstrap css-->
 <!--  CSS -->
 <link rel="stylesheet" href="css/navigation-temp.css">
@@ -1025,16 +1026,30 @@
                 </select>                
               </div>
 
-              <div class="form-group col-sm-12 col-md-12 p-0 mt-2 mb-5">
-                <label for="mpesa-phone" class="text-capitalize">Date of Birth</label>
-                <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+             <div class="col-12">
+              <div class="row">
+                <div class="form-group col-sm-6 col-md-6 p-0 mt-2 mb-5">
+                  <label for="mpesa-phone" class="text-capitalize">Date of Birth</label>
+                  <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                </div>
+  
+                <div class="form-group col-sm-6 col-md-6 p-0 mt-2 mb-5">
+                    <label for="mpesa-phone" class="text-capitalize">Gender</label>
+                    <select class="form-control" id="nationality">
+                      <option>-- Select Gender --</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </div>
               </div>
+             </div>
 
 
-            <div class="form-group col-sm-12 col-md-12 p-0 mt-2 mb-5">
+              <div class="form-group col-sm-12 col-md-12 p-0 mt-2 mb-5">
                 <label for="mpesa-phone" class="text-capitalize">Enter Your ID Number</label>
                 <input type="text" class="form-control" id="plot" placeholder="ID Number">
               </div>
+              
 
               <div class="form-group col-sm-12 col-md-12 p-0 mt-2 mb-5">
                 <label for="mpesa-phone" class="text-capitalize">Phone Number</label>
@@ -1086,7 +1101,7 @@
             </div>
             
             <div class="col-12 px-0 text-uppercase mt-5 pt-5">
-              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 transaction-form-btn"><span class="btn-text text-uppercase font-12">Submit Application</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
+              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0  submit-application-TIN"><span class="btn-text text-uppercase font-12">Submit Application</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
             </div>
           </form>
 			</div>
@@ -1094,13 +1109,13 @@
 			<div class="col-12 d-none p-0 animated details-confirm">
 				 <div class="">
             <p class="mb-5 pb-2 text-capitalize">
-				<span class="back-toform" title="back to transactions form"><i data-feather="arrow-left"  class="mr-3 float-left"></i></span><strong>confirm your transaction details</strong>
+				<span class="back-toform" title="back to transactions form"><i data-feather="arrow-left"  class="mr-3 float-left"></i></span><strong>Details To Be submited</strong>
 					 </p>
 					 <hr class="mt-1 p-0">
-					 <p><strong class="text-capitalize">house details</strong></p>
+					 <p><strong class="text-capitalize">Your Bio Details</strong></p>
 					 
 					 <div class="transactions-details-container text-capitalize">
-					 	<p class="m-0"><span>tenant</span></p>
+					 	<p class="m-0"><span>Full NNames</span></p>
 						 <strong>peter kibe kuria</strong>
 						 <hr>
 						 <p class="m-0"><span>house</span></p>
@@ -1268,10 +1283,65 @@
 </footer>
 <!--			footer--> 
 
+<!-- bootstrap modals would appear here -->
+
+<!-- creating TIN modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">TIN Creation Results</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row text-center">
+          <div class="col-6 mb-2">
+            <p class="mb-0 pb-0">Full Names</p>
+            <h6 class="text-uppercase mt-0">Kelvin Waswa Wasila</h6>
+        </div>
+
+        <div class="col-6 mb-2">
+          <p class="mb-0 pb-0">National ID No.</p>
+          <h6 class="text-uppercase mt-0">12345678</h6>
+        </div>
+
+        <div class="col-12">
+          <hr>
+        </div>
+
+
+        <div class="col-12">
+          <div class="alert alert-primary text-center col-12 w-100" role="alert">
+            <p class="mb-0 pb-0">Generated TIN Number</p>
+            <h5 class="text-uppercase">ARHJMFOG890MFBVGVL</h5>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="Print Docs/TIN Certificate/permit.html" target="new"  type="button" class="btn btn-secondary text-black text-dark" data-dismiss="modal">Print Document</a >
+        <button type="button" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of creating TIN modal -->
+
+<!-- end of all bootstrap modals -->
+
 <!--scripts--> 
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script> 
+
 <script src="lib/owlcarousel/owl.carousel.min.js"></script> 
 <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script> 
 <script src="js/slider.js"></script> 
@@ -1284,6 +1354,12 @@
 <script type="text/javascript" src="js/submenuSlider.js"></script> 
 <script type="text/javascript" src="js/main.js"></script> 
 <script type="text/javascript" src="js/nav.js"></script> 
+
+<script>
+  $('.modal-btn-TIN').on('click', function(){
+    alert("clicked baby")
+  })
+</script>
 <script type="text/javascript">
     var audio1 = document.getElementById("audioID");
 

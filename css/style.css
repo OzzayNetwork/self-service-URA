@@ -1261,7 +1261,7 @@ img {
 }
 
 .btn.btn-primary {
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 400;
     text-transform: capitalize;
   
@@ -2034,7 +2034,7 @@ a, .link, .button.transparent, .button.transparent:hover, .specials_slider_wrapp
     display: none;
 }
 .show {
-    display: none!important;
+    /* display: none!important; */
 }
 }
 .profile-pic img {
@@ -4620,6 +4620,9 @@ div.dataTables_wrapper div.dataTables_info{
 }
 .header-v4 .menu-row .maxwidth-theme{
   background-color: #1755a6 !important;
+}
+.modal{
+  background: #0000004f;
 }
 
 
