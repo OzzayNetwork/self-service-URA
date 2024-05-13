@@ -731,4 +731,23 @@ $(document).ready(function() {
 	
 })(jQuery);
 
+$('.submit-application-TIN').on('click', function(){
+	// alert("clicked")
+	$(this).addClass("d-none")
+	$('.tin-loader').removeClass('d-none')
+
+	
+
+	// Set the timeout duration in milliseconds
+	var timeoutDuration = 5000; // 5 seconds
+
+	// Start the timer
+	var timeoutTimer = setTimeout(function() {
+		// Timeout function
+		// alert("we are here")
+		// $('#createdTinModal').show();
+		$('.TinLaunch').click()
+		// Add your timeout code here
+	}, timeoutDuration);
+})
 //this part affects the transactions page

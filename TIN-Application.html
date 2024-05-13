@@ -137,9 +137,11 @@
                                   <li class="dropdown-submenu  has_img">
                                     <div class="menu_img"><img src="img/new-icons/house.png" alt="cars & vehcles" title="cars & vehcles"></div>
                                     <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Domestic Taxes</font></font> </span> <span class="arrow"><i></i></span></div>
-                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                   <ul class="dropdown-menu toggle_menu text-capitalize">
                                       <!--									revenue stream service-->
                                       <li class="menu-item "> <a href="TIN-Application.html" title="renew your business permits" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">Apply For TIN</font> </font> </span> </a> </li>
+                                      <li class="menu-item"> <a href="print-TIN-cert.html" title="Print TIN Certificate" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">Print TIN Certificate</font> </font> </span> </a> </li>
+
                                       <!--									revenue stream service--> 
                                       <!--									revenue stream service-->
                                       <li class="menu-item"> <a href="create-biz.html" title="pay or check for penalties" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">File A Return</font> </font> </span> </a> </li>
@@ -1103,6 +1105,14 @@
             <div class="col-12 px-0 text-uppercase mt-5 pt-5">
               <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0  submit-application-TIN"><span class="btn-text text-uppercase font-12">Submit Application</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
             </div>
+
+            <!-- loader starts here -->
+
+            <div class="col-12 px-0 text-uppercase mt-5 pt-5 d-none tin-loader">
+              <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0  submit-application-TIN">
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+              </button>
+            </div>
           </form>
 			</div>
 			
@@ -1287,12 +1297,12 @@
 
 <!-- creating TIN modal -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary TinLaunch d-none" data-toggle="modal" data-target="#createdTinModal">
   Launch demo modal
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="createdTinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
