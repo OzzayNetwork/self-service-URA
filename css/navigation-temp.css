@@ -96,10 +96,10 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 button[disabled], html input[disabled] {
     cursor: default
 }
-input[type=checkbox], input[type=radio] {
+/* input[type=checkbox], input[type=radio] {
     box-sizing: border-box;
     padding: 0
-}
+} */
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
 -webkit-appearance:none
 }
@@ -1271,11 +1271,11 @@ input[type=search] {
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
-input[type=checkbox], input[type=radio] {
+/* input[type=checkbox], input[type=radio] {
     margin: 4px 0 0;
     margin-top: 1px\9;
     line-height: normal
-}
+} */
 select[multiple], select[size] {
     height: auto
 }
